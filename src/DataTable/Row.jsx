@@ -1,18 +1,17 @@
 import React from 'react'
 
-const Row = (props) => {
-  const { row } = props
-
+const Row = ({ row }) => {
   return (
     <tr>
       <td>
         <a href={row.edit_path}>
           {row.name1}
-        </a><br />
+        </a>
+        <br />
         <small>{row.email}</small>
       </td>
     </tr>
-  )
+  );
 }
 
-export default Row
+export default Row;
